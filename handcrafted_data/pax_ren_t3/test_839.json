@@ -33,7 +33,7 @@
       }
     }
   ],
-  "Answer_str": "1. East Tableau Ops --- launch Campain Op, spend 1 florin to attack Papal States, place one concession on border; 2. West Tableau Ops --- launch Campain Op, spend 1 florin to attack France, place one concession on border; 2. Declare Globalization Victory.",
+  "Answer_str": "1. East Tableau Ops --- launch Campain Op, spend 1 florin to attack Papal States, place one concession on border; 2. West Tableau Ops --- launch Campain Op, spend 1 florin to attack France, place one concession on border; 3. Declare Globalization Victory.",
   "Rationale": "In Campain Op of East tableau, the attacker is one knight in the  Ottoman kingdom and the target Papal States kingdom does not have any knights/rooks to serve as defenders. In Campain Op of West tableau, the attacker is one knight in the England kingdom and the target France kingdom does not have any knights/rooks to serve as defenders. Now, the blue player has 3 concessions on the map, which are 2 more than the 1 concession that green player has. Additionally, the blue player already has one more Discovery prestige than the opponent purple player. Therefore, the Globalization Victory winning condition is satisfied. Note that the blue player only has two florins (Campain ops requires paying 1 florin per attacker) so this is the only posible way to win the game within 3 turns.",
   "game_state_url": [
     "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/213_1.png",
