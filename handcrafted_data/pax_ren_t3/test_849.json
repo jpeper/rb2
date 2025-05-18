@@ -1,0 +1,26 @@
+{
+  "ID": "849",
+  "Game": "pax_ren",
+  "Test Description": "Testing winning conditions (Renaissance Victory). Test Vote Ops.",
+  "Difficulty Notes": "Strategy problem while testing winning conditions. Requires understanding game actions like Vote Ops. It is quite straighward to derive the winning strategy as the only missing part is the republic card.",
+  "Question": "Given the provided game state, how can the blue player win the game in 2 actions?\n**Please format your response as an ordered JSON list of actions. Each action should follow the format shown below:**\n\n```json\n[\n  {\n    \"action\": \"West Tableau Ops\"\n  },\n  {\n    \"action\": \"West Trade Fair\"\n  },\n  {\n    \"action\": \"Victory\"\n  }\n]\n```\n\n### Format Specifications:\n\nEach list item represents one **action** as a dictionary with the following keys:\n\n1. **\"action\"** (string):\n   Must be one of the following valid actions:\n   `[\"Purchase\", \"Play\", \"Sell\", \"West Tableau Ops\", \"East Tableau Ops\", \"West Trade Fair\", \"East Trade Fair\", \"Victory\"]`",
+  "Answer": [
+    {
+      "action": "West Tableau Ops"
+    },
+    {
+      "action": "Victory"
+    }
+  ],
+  "Answer_str": "1. West Tableau Ops --- launch Vote Ops against Papal States, Papal State regime change into Republic; 2. Declare Renaissance Victory.",
+  "Rationale": "The blue player launches Vote Ops. Since there are only one blue pawn on the border of the target region, Papal State, the blue player has the majority of concessions and thus win the vote. This results in a regime change and the Papal state king card is flipped into a republic card. Now, the blue player has more republic cards. Additionally, the blue player already has two more Law Prestiges than the opponent purple player. Therefore, the Renaissance Victory winning condition is satisfied.",
+  "game_state_url": [
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/217_1.png",
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/217_2.png",
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/217_3.png",
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/217_4.png"
+  ],
+  "Game State Difficulty": 3,
+  "Rules Difficulty": 3,
+  "Strategy Difficulty": 2
+}

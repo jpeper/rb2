@@ -1,0 +1,29 @@
+{
+  "ID": "843",
+  "Game": "pax_ren",
+  "Test Description": "Testing winning conditions (Globalization Victory). Test Coronation one-shot.",
+  "Difficulty Notes": "Strategy problem while testing winning conditions. Requires understanding game actions like Coronation. It is a bit tricky to derive the strategy as you need to decide which card to buy from market and play.",
+  "Question": "Given the provided game state, how can the blue player win the game in 3 actions?\n**Please format your response as an ordered JSON list of actions. Each action should follow the format shown below:**\n\n```json\n[\n  {\n    \"action\": \"West Tableau Ops\"\n  },\n  {\n    \"action\": \"West Trade Fair\"\n  },\n  {\n    \"action\": \"Victory\"\n  }\n]\n```\n\n### Format Specifications:\n\nEach list item represents one **action** as a dictionary with the following keys:\n\n1. **\"action\"** (string):\n   Must be one of the following valid actions:\n   `[\"Purchase\", \"Play\", \"Sell\", \"West Tableau Ops\", \"East Tableau Ops\", \"West Trade Fair\", \"East Trade Fair\", \"Victory\"]`",
+  "Answer": [
+    {
+      "action": "Purchase"
+    },
+    {
+      "action": "Play"
+    },
+    {
+      "action": "Victory"
+    }
+  ],
+  "Answer_str": "1. Purchase --- Spend 2 florins to buy Sophia Palaiologina card from market; 2. Play --- play Sophia Palaiologina card, launch Coronation one-shot, move the Hungary king card to blue player's Tableau, a consession brought by regime change is placed on Hugary's border; 3. Declare Globalization Victory.",
+  "Rationale": "Blue player has 3 florins now so can afford buying Sophia Palaiologina card with 2 florins from the market. Among her list of suitors is the King of Hungary, who is the only King unwed in his Throne (the other two kings are in the opponet's Tableau). By playing the card and launching Coronation one-shot, a royal couple is formed and a regime change happend. The blue player can place on concession on the border of Hungary and move the kingdom card of Hungary to its Tableau. Now, the blue player has 3 concessions on the map, which are 2 more than the 1 concession that green player has. Additionally, the blue player already has one more Discovery prestige than the opponent purple player. Therefore, the Globalization Victory winning condition is satisfied.",
+  "game_state_url": [
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/215_1.png",
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/215_2.png",
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/215_3.png",
+    "https://raw.githubusercontent.com/jpeper/rb2/main/game_states/pax_ren/215_4.png"
+  ],
+  "Game State Difficulty": 3,
+  "Rules Difficulty": 3,
+  "Strategy Difficulty": 3
+}
